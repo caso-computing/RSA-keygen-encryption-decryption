@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		721F14A4275933BE00F8DE4D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 721F14A3275933BE00F8DE4D /* main.c */; };
+		72617774275AD521009237F8 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617773275AD521009237F8 /* rsa.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		72617770275AD0BC009237F8 /* rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = rsa.c; path = "../../genkey-v1/rsa.c"; sourceTree = "<group>"; };
 		72617771275AD361009237F8 /* rsa.pub */ = {isa = PBXFileReference; lastKnownFileType = text; name = rsa.pub; path = "../../genkey-v1/rsa.pub"; sourceTree = "<group>"; };
 		72617772275AD3E2009237F8 /* rsa.pub */ = {isa = PBXFileReference; lastKnownFileType = text; path = rsa.pub; sourceTree = "<group>"; };
+		72617773275AD521009237F8 /* rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rsa.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				721F14A3275933BE00F8DE4D /* main.c */,
 				72617772275AD3E2009237F8 /* rsa.pub */,
+				72617773275AD521009237F8 /* rsa.c */,
 			);
 			path = "RSA keygen, encryption, decryption";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72617774275AD521009237F8 /* rsa.c in Sources */,
 				721F14A4275933BE00F8DE4D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
