@@ -26,6 +26,7 @@
 		721F14A0275933BE00F8DE4D /* RSA keygen, encryption, decryption */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "RSA keygen, encryption, decryption"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721F14A3275933BE00F8DE4D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		721F14B62759F57400F8DE4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		72617770275AD0BC009237F8 /* rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = rsa.c; path = "../../genkey-v1/rsa.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		721F1497275933BE00F8DE4D = {
 			isa = PBXGroup;
 			children = (
+				72617770275AD0BC009237F8 /* rsa.c */,
 				721F14B62759F57400F8DE4D /* README.md */,
 				721F14A2275933BE00F8DE4D /* RSA keygen, encryption, decryption */,
 				721F14A1275933BE00F8DE4D /* Products */,
