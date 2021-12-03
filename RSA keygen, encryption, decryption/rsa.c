@@ -8,6 +8,8 @@
 #include "randstate.h"
 #include "numtheory.h"
 
+//  added goofy line for source contrrol
+
 
 void rsa_make_pub(mpz_t p, mpz_t q, mpz_t n, mpz_t e, uint64_t nbits, uint64_t iters){
 	mpz_t totient,p_minus1,q_minus1,grt_com_div;
