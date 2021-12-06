@@ -12,7 +12,7 @@
 
 extern gmp_randstate_t state;
 
-gmp_randstate_t state;
+// gmp_randstate_t state;
 
 
 // use gmp to compute the greatest common denominator of two mp integers, a & b

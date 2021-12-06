@@ -142,8 +142,7 @@ void rsa_decrypt_file(FILE *infile, FILE *outfile, mpz_t n, mpz_t d){
     mpz_inits(rop,c,NULL);
     uint64_t bitcnt;
     unsigned long int byte_read;
-
-    int block_size = mpz_sizeinbase(n,2);
+    size_t block_size = mpz_sizeinbase(n,2);
     uint8_t *buffer = (uint8_t *)malloc(block_size*sizeof(uint8_t)); 
     //array[block_xize] of uint8_8 * bytes
  //   byte_read= gmp_fscanf(infile,"%Zx",c);
