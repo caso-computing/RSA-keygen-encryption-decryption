@@ -7,14 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72617774275AD521009237F8 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617773275AD521009237F8 /* rsa.c */; };
 		72617784275D8813009237F8 /* numtheory.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617782275D8813009237F8 /* numtheory.c */; };
 		72617785275D8813009237F8 /* keygen.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617781275D8813009237F8 /* keygen.c */; };
 		72617786275D8813009237F8 /* randstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 7261777F275D8813009237F8 /* randstate.c */; };
+		72617798275EF082009237F8 /* numtheory.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617782275D8813009237F8 /* numtheory.c */; };
+		72617799275EF0A4009237F8 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617773275AD521009237F8 /* rsa.c */; };
+		726177A0275EF3D2009237F8 /* encrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7261779F275EF3D2009237F8 /* encrypt.c */; };
+		726177A1275EF4BF009237F8 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617773275AD521009237F8 /* rsa.c */; };
+		726177A2275EF4BF009237F8 /* randstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 7261777F275D8813009237F8 /* randstate.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72617795275ECD3A009237F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 721F1498275933BE00F8DE4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7261778D275ECBDB009237F8;
+			remoteInfo = encrypt;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		721F149E275933BE00F8DE4D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		7261778C275ECBDB009237F8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -46,10 +69,19 @@
 		72617781275D8813009237F8 /* keygen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = keygen.c; sourceTree = "<group>"; };
 		72617782275D8813009237F8 /* numtheory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = numtheory.c; sourceTree = "<group>"; };
 		72617783275D8813009237F8 /* rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		7261778E275ECBDB009237F8 /* encrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encrypt; sourceTree = BUILT_PRODUCTS_DIR; };
+		7261779F275EF3D2009237F8 /* encrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encrypt.c; path = "../../../encrypt-forked-from-genkey-v1/encrypt.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		721F149D275933BE00F8DE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7261778B275ECBDB009237F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +105,7 @@
 				72617771275AD361009237F8 /* rsa.pub */,
 				721F14B62759F57400F8DE4D /* README.md */,
 				721F14A2275933BE00F8DE4D /* RSA keygen, encryption, decryption */,
+				7261778F275ECBDB009237F8 /* encrypt */,
 				721F14A1275933BE00F8DE4D /* Products */,
 				72617775275D84B8009237F8 /* Frameworks */,
 			);
@@ -82,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				721F14A0275933BE00F8DE4D /* RSA keygen, encryption, decryption */,
+				7261778E275ECBDB009237F8 /* encrypt */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +143,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7261778F275ECBDB009237F8 /* encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				7261779F275EF3D2009237F8 /* encrypt.c */,
+			);
+			path = encrypt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,10 +165,28 @@
 			buildRules = (
 			);
 			dependencies = (
+				72617796275ECD3A009237F8 /* PBXTargetDependency */,
 			);
 			name = "RSA keygen, encryption, decryption";
 			productName = "RSA keygen, encryption, decryption";
 			productReference = 721F14A0275933BE00F8DE4D /* RSA keygen, encryption, decryption */;
+			productType = "com.apple.product-type.tool";
+		};
+		7261778D275ECBDB009237F8 /* encrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72617792275ECBDB009237F8 /* Build configuration list for PBXNativeTarget "encrypt" */;
+			buildPhases = (
+				7261778A275ECBDB009237F8 /* Sources */,
+				7261778B275ECBDB009237F8 /* Frameworks */,
+				7261778C275ECBDB009237F8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = encrypt;
+			productName = encrypt;
+			productReference = 7261778E275ECBDB009237F8 /* encrypt */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -139,6 +199,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					721F149F275933BE00F8DE4D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					7261778D275ECBDB009237F8 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -157,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				721F149F275933BE00F8DE4D /* RSA keygen, encryption, decryption */,
+				7261778D275ECBDB009237F8 /* encrypt */,
 			);
 		};
 /* End PBXProject section */
@@ -166,14 +230,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72617799275EF0A4009237F8 /* rsa.c in Sources */,
 				72617785275D8813009237F8 /* keygen.c in Sources */,
 				72617784275D8813009237F8 /* numtheory.c in Sources */,
-				72617774275AD521009237F8 /* rsa.c in Sources */,
 				72617786275D8813009237F8 /* randstate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7261778A275ECBDB009237F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726177A1275EF4BF009237F8 /* rsa.c in Sources */,
+				726177A2275EF4BF009237F8 /* randstate.c in Sources */,
+				72617798275EF082009237F8 /* numtheory.c in Sources */,
+				726177A0275EF3D2009237F8 /* encrypt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72617796275ECD3A009237F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7261778D275ECBDB009237F8 /* encrypt */;
+			targetProxy = 72617795275ECD3A009237F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		721F14A5275933BE00F8DE4D /* Debug */ = {
@@ -314,6 +397,28 @@
 			};
 			name = Release;
 		};
+		72617793275ECBDB009237F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/lib;
+				"OTHER_LDFLAGS[arch=*]" = "-lgmp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		72617794275ECBDB009237F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/lib;
+				"OTHER_LDFLAGS[arch=*]" = "-lgmp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +436,15 @@
 			buildConfigurations = (
 				721F14A8275933BE00F8DE4D /* Debug */,
 				721F14A9275933BE00F8DE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72617792275ECBDB009237F8 /* Build configuration list for PBXNativeTarget "encrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72617793275ECBDB009237F8 /* Debug */,
+				72617794275ECBDB009237F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
