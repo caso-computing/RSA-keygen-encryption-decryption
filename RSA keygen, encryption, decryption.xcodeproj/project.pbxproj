@@ -15,7 +15,7 @@
 		726177A8275F35D8009237F8 /* numtheory.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617777275D87FE009237F8 /* numtheory.c */; };
 		726177A9275F35DD009237F8 /* randstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617776275D87FE009237F8 /* randstate.c */; };
 		726177AA275F35DF009237F8 /* randstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617776275D87FE009237F8 /* randstate.c */; };
-		726177B2275F3A53009237F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 726177B1275F3A53009237F8 /* main.c */; };
+		72F29D6D27630C0A002E9DE5 /* decrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F29D6C27630C0A002E9DE5 /* decrypt.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,6 @@
 		721F14B62759F57400F8DE4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		72617770275AD0BC009237F8 /* rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = rsa.c; path = "../../genkey-v1/rsa.c"; sourceTree = "<group>"; };
 		72617771275AD361009237F8 /* rsa.pub */ = {isa = PBXFileReference; lastKnownFileType = text; name = rsa.pub; path = "../../genkey-v1/rsa.pub"; sourceTree = "<group>"; };
-		72617772275AD3E2009237F8 /* rsa.pub */ = {isa = PBXFileReference; lastKnownFileType = text; path = rsa.pub; sourceTree = "<group>"; };
-		72617773275AD521009237F8 /* rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rsa.c; sourceTree = "<group>"; };
 		72617776275D87FE009237F8 /* randstate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = randstate.c; path = "../../genkey-v1/randstate.c"; sourceTree = "<group>"; };
 		72617777275D87FE009237F8 /* numtheory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = numtheory.c; path = "../../genkey-v1/numtheory.c"; sourceTree = "<group>"; };
 		72617778275D87FE009237F8 /* randstate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = randstate.h; path = "../../genkey-v1/randstate.h"; sourceTree = "<group>"; };
@@ -72,18 +70,11 @@
 		7261777A275D87FE009237F8 /* keygen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = keygen.c; path = "../../genkey-v1/keygen.c"; sourceTree = "<group>"; };
 		7261777B275D87FE009237F8 /* rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "../../genkey-v1/rsa.h"; sourceTree = "<group>"; };
 		7261777C275D87FE009237F8 /* numtheory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = numtheory.h; path = "../../genkey-v1/numtheory.h"; sourceTree = "<group>"; };
-		7261777D275D8813009237F8 /* numtheory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = numtheory.h; sourceTree = "<group>"; };
-		7261777E275D8813009237F8 /* set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
-		7261777F275D8813009237F8 /* randstate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = randstate.c; sourceTree = "<group>"; };
-		72617780275D8813009237F8 /* randstate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randstate.h; sourceTree = "<group>"; };
-		72617781275D8813009237F8 /* keygen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = keygen.c; sourceTree = "<group>"; };
-		72617782275D8813009237F8 /* numtheory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = numtheory.c; sourceTree = "<group>"; };
-		72617783275D8813009237F8 /* rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
 		7261778E275ECBDB009237F8 /* encrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encrypt; sourceTree = BUILT_PRODUCTS_DIR; };
 		7261779F275EF3D2009237F8 /* encrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encrypt.c; path = "../../../encrypt-forked-from-genkey-v1/encrypt.c"; sourceTree = "<group>"; };
-		726177A3275F35A4009237F8 /* encrypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = encrypt.c; path = "../../encrypt-forked-from-genkey-v1/encrypt.c"; sourceTree = "<group>"; };
 		726177AF275F3A53009237F8 /* decrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = decrypt; sourceTree = BUILT_PRODUCTS_DIR; };
-		726177B1275F3A53009237F8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		72F29D6B27621940002E9DE5 /* rsa (4).c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "rsa (4).c"; path = "../../../../../../Downloads/rsa (4).c"; sourceTree = "<group>"; };
+		72F29D6C27630C0A002E9DE5 /* decrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decrypt.c; path = "../../../decrypt-v1/decrypt.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				7261777A275D87FE009237F8 /* keygen.c */,
-				726177A3275F35A4009237F8 /* encrypt.c */,
 				72617770275AD0BC009237F8 /* rsa.c */,
 				72617777275D87FE009237F8 /* numtheory.c */,
 				72617776275D87FE009237F8 /* randstate.c */,
@@ -125,7 +115,7 @@
 				72617779275D87FE009237F8 /* set.h */,
 				72617771275AD361009237F8 /* rsa.pub */,
 				721F14B62759F57400F8DE4D /* README.md */,
-				721F14A2275933BE00F8DE4D /* RSA keygen, encryption, decryption */,
+				721F14A2275933BE00F8DE4D /* keygen */,
 				7261778F275ECBDB009237F8 /* encrypt */,
 				726177B0275F3A53009237F8 /* decrypt */,
 				721F14A1275933BE00F8DE4D /* Products */,
@@ -143,20 +133,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		721F14A2275933BE00F8DE4D /* RSA keygen, encryption, decryption */ = {
+		721F14A2275933BE00F8DE4D /* keygen */ = {
 			isa = PBXGroup;
 			children = (
-				72617781275D8813009237F8 /* keygen.c */,
-				72617773275AD521009237F8 /* rsa.c */,
-				72617782275D8813009237F8 /* numtheory.c */,
-				7261777F275D8813009237F8 /* randstate.c */,
-				7261777D275D8813009237F8 /* numtheory.h */,
-				72617780275D8813009237F8 /* randstate.h */,
-				72617783275D8813009237F8 /* rsa.h */,
-				7261777E275D8813009237F8 /* set.h */,
-				72617772275AD3E2009237F8 /* rsa.pub */,
+				72F29D6B27621940002E9DE5 /* rsa (4).c */,
 			);
-			path = "RSA keygen, encryption, decryption";
+			path = keygen;
 			sourceTree = "<group>";
 		};
 		72617775275D84B8009237F8 /* Frameworks */ = {
@@ -177,7 +159,7 @@
 		726177B0275F3A53009237F8 /* decrypt */ = {
 			isa = PBXGroup;
 			children = (
-				726177B1275F3A53009237F8 /* main.c */,
+				72F29D6C27630C0A002E9DE5 /* decrypt.c */,
 			);
 			path = decrypt;
 			sourceTree = "<group>";
@@ -304,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				726177B2275F3A53009237F8 /* main.c in Sources */,
+				72F29D6D27630C0A002E9DE5 /* decrypt.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
