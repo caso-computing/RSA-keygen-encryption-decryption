@@ -15,7 +15,10 @@
 		726177A8275F35D8009237F8 /* numtheory.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617777275D87FE009237F8 /* numtheory.c */; };
 		726177A9275F35DD009237F8 /* randstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617776275D87FE009237F8 /* randstate.c */; };
 		726177AA275F35DF009237F8 /* randstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617776275D87FE009237F8 /* randstate.c */; };
-		72F29D6D27630C0A002E9DE5 /* decrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F29D6C27630C0A002E9DE5 /* decrypt.c */; };
+		72F29D6E276320DB002E9DE5 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617770275AD0BC009237F8 /* rsa.c */; };
+		72F29D6F276320E5002E9DE5 /* numtheory.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617777275D87FE009237F8 /* numtheory.c */; };
+		72F29D70276320EB002E9DE5 /* randstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 72617776275D87FE009237F8 /* randstate.c */; };
+		72F29D722763246B002E9DE5 /* decrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 72F29D7127632461002E9DE5 /* decrypt.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +59,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		72F29D752766D825002E9DE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		721F14A0275933BE00F8DE4D /* RSA keygen, encryption, decryption */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "RSA keygen, encryption, decryption"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721F14B62759F57400F8DE4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		72617770275AD0BC009237F8 /* rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = rsa.c; path = "../../genkey-v1/rsa.c"; sourceTree = "<group>"; };
-		72617771275AD361009237F8 /* rsa.pub */ = {isa = PBXFileReference; lastKnownFileType = text; name = rsa.pub; path = "../../genkey-v1/rsa.pub"; sourceTree = "<group>"; };
 		72617776275D87FE009237F8 /* randstate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = randstate.c; path = "../../genkey-v1/randstate.c"; sourceTree = "<group>"; };
 		72617777275D87FE009237F8 /* numtheory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = numtheory.c; path = "../../genkey-v1/numtheory.c"; sourceTree = "<group>"; };
 		72617778275D87FE009237F8 /* randstate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = randstate.h; path = "../../genkey-v1/randstate.h"; sourceTree = "<group>"; };
@@ -74,7 +85,8 @@
 		7261779F275EF3D2009237F8 /* encrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encrypt.c; path = "../../../encrypt-forked-from-genkey-v1/encrypt.c"; sourceTree = "<group>"; };
 		726177AF275F3A53009237F8 /* decrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = decrypt; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F29D6B27621940002E9DE5 /* rsa (4).c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "rsa (4).c"; path = "../../../../../../Downloads/rsa (4).c"; sourceTree = "<group>"; };
-		72F29D6C27630C0A002E9DE5 /* decrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decrypt.c; path = "../../../decrypt-v1/decrypt.c"; sourceTree = "<group>"; };
+		72F29D7127632461002E9DE5 /* decrypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = decrypt.c; sourceTree = "<group>"; };
+		72F29D772766D825002E9DE5 /* decrypt2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = decrypt2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72F29D742766D825002E9DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				7261777A275D87FE009237F8 /* keygen.c */,
+				72F29D7127632461002E9DE5 /* decrypt.c */,
 				72617770275AD0BC009237F8 /* rsa.c */,
 				72617777275D87FE009237F8 /* numtheory.c */,
 				72617776275D87FE009237F8 /* randstate.c */,
@@ -113,11 +133,9 @@
 				72617778275D87FE009237F8 /* randstate.h */,
 				7261777B275D87FE009237F8 /* rsa.h */,
 				72617779275D87FE009237F8 /* set.h */,
-				72617771275AD361009237F8 /* rsa.pub */,
 				721F14B62759F57400F8DE4D /* README.md */,
 				721F14A2275933BE00F8DE4D /* keygen */,
 				7261778F275ECBDB009237F8 /* encrypt */,
-				726177B0275F3A53009237F8 /* decrypt */,
 				721F14A1275933BE00F8DE4D /* Products */,
 				72617775275D84B8009237F8 /* Frameworks */,
 			);
@@ -129,6 +147,7 @@
 				721F14A0275933BE00F8DE4D /* RSA keygen, encryption, decryption */,
 				7261778E275ECBDB009237F8 /* encrypt */,
 				726177AF275F3A53009237F8 /* decrypt */,
+				72F29D772766D825002E9DE5 /* decrypt2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,14 +173,6 @@
 				7261779F275EF3D2009237F8 /* encrypt.c */,
 			);
 			path = encrypt;
-			sourceTree = "<group>";
-		};
-		726177B0275F3A53009237F8 /* decrypt */ = {
-			isa = PBXGroup;
-			children = (
-				72F29D6C27630C0A002E9DE5 /* decrypt.c */,
-			);
-			path = decrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,23 @@
 			productReference = 726177AF275F3A53009237F8 /* decrypt */;
 			productType = "com.apple.product-type.tool";
 		};
+		72F29D762766D825002E9DE5 /* decrypt2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F29D7B2766D825002E9DE5 /* Build configuration list for PBXNativeTarget "decrypt2" */;
+			buildPhases = (
+				72F29D732766D825002E9DE5 /* Sources */,
+				72F29D742766D825002E9DE5 /* Frameworks */,
+				72F29D752766D825002E9DE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = decrypt2;
+			productName = decrypt2;
+			productReference = 72F29D772766D825002E9DE5 /* decrypt2 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,6 +263,9 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					726177AE275F3A53009237F8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					72F29D762766D825002E9DE5 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -255,6 +286,7 @@
 				721F149F275933BE00F8DE4D /* RSA keygen, encryption, decryption */,
 				7261778D275ECBDB009237F8 /* encrypt */,
 				726177AE275F3A53009237F8 /* decrypt */,
+				72F29D762766D825002E9DE5 /* decrypt2 */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F29D6D27630C0A002E9DE5 /* decrypt.c in Sources */,
+				72F29D6F276320E5002E9DE5 /* numtheory.c in Sources */,
+				72F29D722763246B002E9DE5 /* decrypt.c in Sources */,
+				72F29D6E276320DB002E9DE5 /* rsa.c in Sources */,
+				72F29D70276320EB002E9DE5 /* randstate.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F29D732766D825002E9DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +507,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/lib;
+				"OTHER_LDFLAGS[arch=*]" = "-lgmp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -473,6 +518,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /opt/homebrew/Cellar/gmp/6.2.1_1/lib;
+				"OTHER_LDFLAGS[arch=*]" = "-lgmp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		72F29D7C2766D825002E9DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				NEW_SETTING = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		72F29D7D2766D825002E9DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				NEW_SETTING = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -512,6 +578,15 @@
 			buildConfigurations = (
 				726177B4275F3A53009237F8 /* Debug */,
 				726177B5275F3A53009237F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F29D7B2766D825002E9DE5 /* Build configuration list for PBXNativeTarget "decrypt2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F29D7C2766D825002E9DE5 /* Debug */,
+				72F29D7D2766D825002E9DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
