@@ -1,5 +1,7 @@
 #  this is a readme text
-# title two
-
+##
+- title two
+- bullit three
+- 
 . this is aone bullit
 .  second bullit
